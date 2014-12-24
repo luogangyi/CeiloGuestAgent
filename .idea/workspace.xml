@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f74864b7-0c52-4e27-b7ab-5f61193f4279" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CeiloGuestAgent/guestagent.py" afterPath="$PROJECT_DIR$/CeiloGuestAgent/guestagent.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CeiloGuestAgent/test.py" afterPath="$PROJECT_DIR$/CeiloGuestAgent/test.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CeiloGuestAgent/vmchannels.py" afterPath="$PROJECT_DIR$/CeiloGuestAgent/vmchannels.py" />
     </list>
     <ignored path="CeiloGuestAgent.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,10 +28,10 @@
       <file leaf-file-name="guestagent.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CeiloGuestAgent/guestagent.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4608076" vertical-offset="3388" max-vertical-offset="8784">
-              <caret line="199" column="17" selection-start-line="199" selection-start-column="17" selection-end-line="199" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.21377672" vertical-offset="3456" max-vertical-offset="8838">
+              <caret line="197" column="23" selection-start-line="197" selection-start-column="8" selection-end-line="197" selection-end-column="23" />
               <folding>
-                <element signature="e#846#860#0" expanded="true" />
+                <element signature="e#846#857#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -470,12 +468,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/CeiloGuestAgent/guestagent.py</url>
-          <line>452</line>
+          <line>455</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/CeiloGuestAgent/guestagent.py</url>
-          <line>410</line>
+          <line>413</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
@@ -601,10 +599,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CeiloGuestAgent/guestagent.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4608076" vertical-offset="3388" max-vertical-offset="8784">
-          <caret line="199" column="17" selection-start-line="199" selection-start-column="17" selection-end-line="199" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.21377672" vertical-offset="3456" max-vertical-offset="8838">
+          <caret line="197" column="23" selection-start-line="197" selection-start-column="8" selection-end-line="197" selection-end-column="23" />
           <folding>
-            <element signature="e#846#860#0" expanded="true" />
+            <element signature="e#846#857#0" expanded="true" />
           </folding>
         </state>
       </provider>

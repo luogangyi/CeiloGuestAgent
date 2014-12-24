@@ -19,12 +19,13 @@ __author__ = 'luogangyi'
 # Refer to the README and COPYING files for full details of the license
 #
 
-import logging
 import time
 import socket
 import errno
 import json
 import unicodedata
+import os
+import stat
 
 # TODO: in future import from ..
 import supervdsm
@@ -195,7 +196,9 @@ class GuestAgent(object):
                 self._forward('api-version', {'apiVersion': commonVersion})
 
     def _prepare_socket(self):
-        supervdsm.getProxy().prepareVmChannel(self._socketName)
+        mode = os.stat(self._socketName).st_mode | stat.S_IWGRP
+        os.chmod(self._socketName, mode)
+        #supervdsm.getProxy().prepareVmChannel(self._socketName)
 
     @staticmethod
     def _create(self):
