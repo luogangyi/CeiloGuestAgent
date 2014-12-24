@@ -177,6 +177,7 @@ class GuestAgent(object):
         """
         try:
             commonVersion = int(version)
+            print(commonVersion)
         except ValueError:
             self.log.warning("Received invalid version value: %s", version)
             commonVersion = _IMPLICIT_API_VERSION_ZERO
@@ -235,10 +236,10 @@ class GuestAgent(object):
         args['__name__'] = cmd
         message = (json.dumps(args) + '\n').encode('utf8')
         self._sock.send(message)
-        self.log.log(logging.TRACE, 'sent %s', message)
+        self.log.debug('sent %s', message)
 
     def _handleMessage(self, message, args):
-        self.log.log(logging.TRACE, "Guest's message %s: %s", message, args)
+        self.log.debug("Guest's message %s: %s", message, args)
         if self.guestStatus is None:
             self.guestStatus = vmstatus.UP
         if message == 'heartbeat':
@@ -409,7 +410,7 @@ class GuestAgent(object):
         self.guestInfo['memUsage'] = 0
         if self.guestStatus not in (vmstatus.POWERING_DOWN,
                                     vmstatus.REBOOT_IN_PROGRESS):
-            self.log.log(logging.TRACE, "Guest connection timed out")
+            self.log.debug("Guest connection timed out")
             self.guestStatus = None
 
     def _clearReadBuffer(self):
